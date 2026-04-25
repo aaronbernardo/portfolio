@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alex Carter | Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="sticky-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#highlights">Highlights</a>
+        <a href="#feedback">Feedback</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero parallax" id="about">
+        <div class="overlay"></div>
+        <div class="hero-content card">
+          <p class="eyebrow">Speaker • Entertainer • Storyteller</p>
+          <h1>Hi, I'm Alex.</h1>
+          <p>
+            I bring people together through humor, honest storytelling, and
+            memorable stage presence. I help audiences feel seen while keeping
+            every room energized.
+          </p>
+        </div>
+      </section>
+
+      <section class="section card" id="work">
+        <h2>What I Do</h2>
+        <div class="grid">
+          <article>
+            <h3>Live Hosting</h3>
+            <p>
+              Confident, crowd-aware event hosting for conferences, shows, and
+              community nights.
+            </p>
+          </article>
+          <article>
+            <h3>Stand-Up & Sets</h3>
+            <p>
+              High-energy, relatable comedy crafted around everyday moments and
+              authentic experiences.
+            </p>
+          </article>
+          <article>
+            <h3>Creative Writing</h3>
+            <p>
+              Scripts, punch-ups, and storytelling support that balances humor
+              with clear messaging.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section parallax pastel-two" id="highlights">
+        <div class="card">
+          <h2>Highlights</h2>
+          <ul>
+            <li>🎤 Known for warm audience interaction and sharp improv.</li>
+            <li>🌈 Brings a calm, approachable style with upbeat delivery.</li>
+            <li>🚀 Focused on building memorable experiences, not just moments.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section card" id="feedback">
+        <h2>Feedback</h2>
+        <p>
+          Have an event idea, collaboration request, or note? Send a quick
+          message below.
+        </p>
+        <form id="feedback-form" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required />
+
+          <label for="message">Message</label>
+          <input
+            id="message"
+            name="message"
+            type="text"
+            placeholder="Your feedback"
+            required
+          />
+
+          <button type="submit">Send Feedback</button>
+          <p id="form-status" aria-live="polite"></p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Alex Carter. Built with intention and pastel vibes.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
